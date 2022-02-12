@@ -18,6 +18,9 @@ function DetailsCard({ item }) {
       />
       <Card.Body>
         <Container className="position-relative">
+          <Card.Text className="position-absolute top-0 end-0">
+            ({Math.round(rating_score)})
+          </Card.Text>
           {[...Array(5)].map((star, index) => {
             index += 1;
             return (
@@ -26,9 +29,6 @@ function DetailsCard({ item }) {
                 className={index <= rating_count ? "on" : "off"}
               >
                 &#9733;
-                <Card.Text className="position-absolute top-0 end-0">
-                  ({Math.round(rating_score)})
-                </Card.Text>
               </span>
             );
           })}
