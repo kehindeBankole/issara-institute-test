@@ -1,0 +1,14 @@
+.card{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 350px;
+    border: 0;
+}
+
+.on {
+    color: orange;
+  }
+  .off {
+    color: black;;
+  }
