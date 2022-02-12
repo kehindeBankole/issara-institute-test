@@ -8,6 +8,7 @@ function DetailsCard({ item }) {
     <Card className="card">
       <Card.Img
         variant="top"
+        alt="thumbnail"
         src={
           image
             ? image
