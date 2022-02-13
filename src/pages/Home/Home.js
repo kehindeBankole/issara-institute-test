@@ -12,6 +12,7 @@ function Home() {
   let { loading, data, code } = useSelector((state) => state.service);
   useEffect(() => {
     dispatch(getPost(code));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [code]);
   if (loading === true) return <Loader />;
   if (data.length === 0) return <Error />;

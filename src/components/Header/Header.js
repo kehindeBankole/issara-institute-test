@@ -17,6 +17,7 @@ function Header() {
 
   useEffect(() => {
     dispatch(getLanguages());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <Container fluid className="header">
